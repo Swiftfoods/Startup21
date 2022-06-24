@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">    
-<title>Login</title>
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">    
+ <script src="script.js"></script>
+ <title>Login</title>
 </head>
 <body>
     <div id="main_container">
@@ -15,7 +16,7 @@
             <h1>Login</h1>
         </div>
         <div id="content_container">
-            <form>
+            <form name="myform" onsubmit="return validateForm()">
                 <label name="email"> Enter your email address<br>
                 <input class="textarea" type="text" name="email">
                 </label>
@@ -28,7 +29,7 @@
                 <input id="checkmark" type="checkbox" name="check">
                 </label>
                 <br>
-                <input class="textarea button" type="button" name="Login" value="Login">
+                <input class="textarea button" type="submit" name="Login" value="Login">
             </form>
         </div>
         <div id="first_footer">
