@@ -1,0 +1,308 @@
+body{
+margin: 0;
+padding-left: 30.45px;
+padding-right: 30.45px;
+font-family: 'Montserrat', sans-serif;
+background-color: #ebebe0;
+
+}
+
+#logo{
+    margin: 0;
+}
+
+#navbar {
+    position: fixed;
+    display: block;
+    width: 1440px;
+    height: 87px;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    box-shadow:  10px 5px 15px gray;
+}
+
+#navbar::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+#navbar img{
+    margin-top: 20px;
+    margin-bottom: 16px;
+    margin-left: 33px;
+    margin-right: 13px;
+    display:block;
+    float: left;
+}
+
+
+#header {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#header ul {
+list-style: none;
+font-size: large;
+margin-top: 33px;
+margin-bottom: 32px;
+margin-right: 0;
+}
+
+#header li{
+    display: inline-block;
+    margin-left: 100px;
+    padding: 0;
+    margin-right: 0;
+}
+
+#header li a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#header li a::after { 
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 2px;
+    width: 0;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  }
+  
+  #header li a:hover::after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+
+#login {
+    position: absolute;
+    float: left;
+    margin-right: 53px;
+    margin-top: 25px;
+    margin-bottom: 18px;
+    margin-left: 283.98px;
+    height: 44px;
+    width: 154px;
+    border: 2px solid #4BA90A;
+    border-radius: 5px;
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#Navbar{
+    position: fixed;
+    margin-top: 0;
+    
+}
+
+#main_container{
+    display: block;
+    padding-top: 120.66px;
+}
+
+#section_a{
+    display: flex;
+}
+
+#left_a{
+    font-weight: 300;
+    width: 430px;
+    text-align: left;
+
+    float: left;
+    margin-right: 82.33px;
+    padding: 0;
+}
+
+#left_a h1 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#left_a img{
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#right_a{
+    float: right;
+    margin-left: 82.33px;
+    width: 775.55px;
+    height: 775.55px;
+    background-image: url(/Images/Ellipse\ 9.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    
+}
+
+#order_button {
+    border: 0;
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    height: 45px;
+    background-color: #f24822;
+    padding-top: 15px;
+    border-radius: 10px;
+}
+
+#order_button a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+    font-weight: 500;
+}
+
+#food_a{
+    margin-top: 20px;
+    width: 710px;
+    height: 710px;
+}
+
+#section_b{
+    margin-top: 61px;
+    margin-left: 106px;
+    width: 1228px;
+    height: 307px;
+    text-align: center;
+}
+
+#section_b table{
+    height: 245px;
+}
+
+#p_b {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.img_frame {
+    border-radius: 50%;
+    border: 0;
+}
+
+.td_b{
+    padding-top: 0;
+    padding-bottom: 0;
+    position: static;
+    height: 243px;
+}
+
+.h2_b{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.td_bs {
+    width: 86px;
+}
+
+#section_c{  
+    margin-top: 70px;
+    text-align: center;
+}
+.header_c {
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 27px;
+}
+#flexbox {
+    display: flex;
+    margin-top: 30px;
+}
+
+.mini_menu{
+    width: 428px;
+    height: 556px;
+    margin-left: 44px;
+    margin-bottom: 0;
+    float: left;
+    padding: 0;
+}
+
+.food_c{
+    width: 428px;
+    height: 476px;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.price_tag {
+    height: 80px;
+    margin-top: 0;
+    border-radius: 10px;
+    border: 2px solid gray;
+    background-color: white;
+    padding: 0;
+}
+.food_name{
+    text-align: left;
+    font-weight:600;
+    font-size: 27px;
+    padding-left: 34px;
+    padding-top: 0;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+.food_price{
+    display: inline-block;
+    text-align: right;
+    font-weight: 600;
+    padding-right: 13px;
+    font-size: 20px;
+    padding-top: 0;
+    margin-top: 10px;
+    margin-right: 13px;
+    width: 100%;
+}
+
+#about_us {
+    margin-top: 50px;
+    padding-top: 30px;
+    text-align: center;
+    background-color: white;
+    height: 323px;
+}
+
+#about_us p {
+    font-size: large;
+}
+
+#section_d{
+    margin-top: 50px;
+    height: 352px;
+}
+
+#Email{
+    width: 672px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: large;
+}
+
+#submit{
+    width: 176px;
+    height: 62px;
+    border-radius: 10px;
+    font-size: larger;
+    background-color: #4BA90A;
+    color: white;
+    border: 2px solid #4BA90A;
+    margin-bottom: 100px;
+}
