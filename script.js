@@ -8,7 +8,8 @@ function validateForm(){
         alert ("Please input your password");
     }
 }
- function validateForm2(){
+
+function validateForm2(){
     let a = document.forms["myform2"]["first_name"].value;
     if (a == "") {
       alert("First name must be filled out");
