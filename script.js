@@ -46,3 +46,10 @@ function validateForm(){
         return false;
     }
 }
+
+function validateForm3(){
+  let x = document.forms["myform3"]["Email"].value;
+  if(x == ""){
+      alert ("Enter your Email address");
+  }
+}
