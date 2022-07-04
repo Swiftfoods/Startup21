@@ -1,14 +1,7 @@
 body{
+    margin: 0;
     width: 1440px;
-    padding-top: 0;
-    padding-left: 10px;
-    padding-right: 10px;
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
-}
-
-#logo{
-    margin: 0;
 }
 
 #navbar {
@@ -19,7 +12,6 @@ body{
     background-color: white;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
-    box-shadow:  10px 5px 15px gray;
 }
 
 #navbar::after{
@@ -102,140 +94,205 @@ margin-right: 0;
     font-family: 'Montserrat', sans-serif;
 }
 
-#Navbar{
-    position: fixed;
-    margin-top: 0;
-    
-}
 
-#section_a{
-    padding-top: 70px;
-    width: 1440px;
-    height: 990px;
-    background-image: url(./Images/Ellipse\ 72.png);
-    background-repeat: no-repeat;
-    background-position: right;
-}
 
-#header_a{
-    width: 859px;
-    height: 195px;
-    padding-left: 0;
-    margin: 0;
-    text-align: left;
-    
+#main_section{
+    padding-top: 100px;
+    display:block;
+    background-color:#F4F4F8;
 }
-#H1_a{
-    font-weight: 600px ;
+#head{
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+#head h1{
     font-size: 40px;
-}
-#H2_a{
-    font-weight: 400;
-    font-size: 30px;
-}
-
-#midder_a{
-    margin-top: 37px;
-    width: 100%;
-    display: flex;
-}
-#upperleft_a{
-    
-    margin-right: 104px;
-    margin-top: 100px;
-}
-#upperright_a{
-    margin: 0;
-    
-}
-
-#lowmid_a{
-
-    margin-top: 100px;
-    display: flex;
-    width: 100%;
-    height: 170px;
-    margin-bottom: 9px;
-}
-.h1_a{
     font-weight: 600;
-    font-size: 25px;
-    
+    font-family: 'Montserrat', sans-serif;
 }
-.h1_a a{
-    text-decoration: none;
-    color: black;
+
+#mini_box{
+display: flex;
+margin-top: -30px;
+margin-left: 12px;
+padding-top: 52px;
+padding-left: 12px;
+margin-right: 12px;
+background-color: white;
 }
-.h2_a{
+
+.order_box{
+    margin-right: 124px;
+    width: 740px;
+}
+
+.orders{
+    display: flex;
+    margin-bottom: 15px;
+    border: 2px solid #F4F4F8;
+    background-color: white;
+    width: 690px;
+    height: 176px;
+}
+.orders h1{
+    font-size: 24px;
+    justify-content: space-between;
+}
+.orders h2{
+    font-size: 12px;
+    font-weight: 300;
+}
+.photo_box{
+    margin-right: 20px;
+}
+.info_box{
+    margin-top: 30px;
+    line-height: .5em;
+}
+.food_name{
+    font-size: 18px;
     font-weight: 500;
+    margin-right: 50px;
+}
+.unit_control{
+    border: 1px solid #F4F4F8;   
+    width: 80px;
+    height: 30px;
+    margin-top: 67px;
+    margin-left: 84px;
+    padding-top: 8px;
+    padding-left: 20px;
+    background-color: white;
+}
+.unit_down{
+    margin-right: 4px;
+    border: 1px solid #F4F4F8;
+    width: 20px;
+    height: 20px;
+}
+.unit_up{
+    margin-left: 4px;
+    border: 1px solid #F4F4F8;
+    width: 20px;
+    height: 20px;
+}
+.delete{
+    width: 94px;
+    height: 27px;
+    margin-top: 125px;
+    margin-left: -200px;
+    font-size: 14px;
+    background-color: white;
+    border: 1px solid rgb(238, 232, 232);
+}
+.delete img{
+margin-right: 6px;
+}
+
+#transaction_report{
+    width: 520px;
+    height: 130px;
+    background-color: #F4F4F8 ;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding-left: 5px;
+    padding-bottom: 3px;
+}
+
+#transaction_report h2 {
+    font-size: 16px;
+    font-weight: 300;
+}
+#subtotal{
+    margin-left: 370px;
+}
+#delivery_price{
+    margin-left: 350px;
+}
+#total_price{
+    margin-left: 370px;
+}
+#transaction_report h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#mini_text{
+    text-align: right;
+    font-size: 10px;
+}
+
+#payment_option{
+    width: 520px;
+    height: 130px;
+    background-color: #F4F4F8 ;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding-left: 5px;
+    padding-top: 30px;
+    padding-bottom: 3px;
+    line-height: 3em;
+    font-weight: 600;
+}
+.card{
+    margin-bottom: -8px;
+}
+#continue{
+    background-color: white;
+    border: 0;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#proceed {
+    width: 350px;
+    height: 60px;
+    background-color: #4BA90A;
+    margin-left: 81px;
+    margin-top: 50px;
+    border-radius: 8px;
+    border: 0;
+}
+#proceed a {
+    text-decoration: none;
+    color: white;
     font-size: 22px;
 }
-#lowerleft_a{
-    width: 30%;
-    display: inline-block;
-    text-align: center;
-}
-#lowermid_a{
-    width: 30%;
-    display: inline-block;
-    text-align: center;
-}
-#lowerright_a{
-    width: 30%;
-    text-align: center;
+#proceed:hover{
+    background-color: #f24822;
 }
 
-#header_b{
-    text-align: center;
-    text-decoration: underline;
-    font-size: 30px;
-    font-weight: 600;
+#coupon_box{
+    margin-top: 60px;
+    padding-left: 20px;
+    width: 1440px;
+    height: 800px;
+    background-image: url(./Images/image_15-removebg-preview\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
-#section_c{
-    display: flex;
-}
-#left_c{
-    margin-top: 375px;
-    height: 352px;
-    margin-right: 219px;
-}
-
-#Email{
-    width: 672px;
+#coupon_field{
+    width: 552px;
     height: 60px;
     border-radius: 10px;
-    font-size: large;
+    border: 2px solid #4BA90A;
+    margin-right: 0;
 }
-
-#submit{
-    width: 176px;
-    height: 62px;
+#apply{
     border-radius: 10px;
-    font-size: larger;
+    border: 0;
+    width: 155px;
+    height: 64px;
     background-color: #4BA90A;
     color: white;
-    border: 2px solid #4BA90A;
-    margin-bottom: 100px;
-}
-
-#right_c{
-    margin-top: 299px;
-    margin-right: 69px;
-}
-
-#h1_c{
-font-size: 27px;
-font-weight: 500;
-}
-#h2_c{
-    font-weight: 400;
     font-size: 24px;
-text-align: center;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    margin-left: 1px;
+    
 }
-#h2_c a{
-    text-decoration: none;
-    color: black;
+#apply:hover{
+    background-color: #f24822;
 }
 
 .footer {
@@ -395,28 +452,3 @@ ul {
     color: #ffffff;
     background-color: #1E1E1E;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -142,7 +142,7 @@ margin-right: 0;
     margin-left: 82.33px;
     width: 775.55px;
     height: 775.55px;
-    background-image: url(/Images/Ellipse\ 9.png);
+    background-image: url(./Images/Ellipse\ 9.png);
     background-repeat: no-repeat;
     text-align: center;
     
@@ -278,6 +278,7 @@ margin-right: 0;
     text-align: center;
     background-color: white;
     height: 323px;
+    width: 1400px;
 }
 
 #about_us p {
@@ -287,6 +288,7 @@ margin-right: 0;
 #section_d{
     margin-top: 50px;
     height: 352px;
+    width: 1400px;
 }
 
 #Email{

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="homepagestyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +24,6 @@
                         <li><a href="findastore.html">Menu</a></li>
                   </ul>
                 </nav>
-                <a href="login.html"><input id="login" type="button" name="Log in" value="Log in"></a>
             </div>
         </div>
      <div id="section_a">
@@ -96,12 +96,30 @@
          </div>
      </div>
      <div id="section_d">
-         <h1> What our Clients say</h1>
-         <div id="comment_box">
-             <div class="comments"><img src="./Images/Ellipse 10.png"><div class="bg_green"><h1>Bamidele Anthony <br><img src="/Images/Star rating.png"></h1>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis</div></div>
-             <div class="comments"><img src="./Images/Ellipse 10 (1).png"><div class="bg_green"><h1>Mary Oluwayemisi <br><img src="/Images/Star rating.png"></h1>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis</div></div>
-             <div class="comments"><img src="./Images/Ellipse 10 (2).png"><div class="bg_green"><h1>Winnifred Johnson <br><img src="/Images/Star rating.png"></h1>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis</div></div>
+           <h1> What our Clients say</h1>
+           <nav>
+               <input onclick="showPage(0)" class="btn" type="button" value="1">
+               <input onclick="showPage(1)" class="btn" type="button" value="2">
+               <input onclick="showPage(2)" class="btn" type="button" value="3">
+               
+           </nav>
+           <div class="pages">
+          <div id="comment_box" class="page" data-page="1">
+             <div class="comments"><img src="./Images/Ellipse 10.png"><div class="bg_green"><h1>Bamidele Anthony <br><img src="./Images/Star rating.png"></h1>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis</div></div>
+             <div class="comments"><img src="./Images/Ellipse 10 (1).png"><div class="bg_green"><h1>Mary Oluwayemisi <br><img src="./Images/Star rating.png"></h1>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis</div></div>
+             <div class="comments"><img src="./Images/Ellipse 10 (2).png"><div class="bg_green"><h1>Winnifred Johnson <br><img src="./Images/Star rating.png"></h1>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis</div></div>
          </div>
+         <div id="comment_box" class="page" data-page="2">
+            <div class="comments"><img src="./Images/Ellipse 10.png"><div class="bg_green"><h1>Oladele Anthony <br><img src="./Images/Star rating.png"></h1>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis</div></div>
+            <div class="comments"><img src="./Images/Ellipse 10 (1).png"><div class="bg_green"><h1>Mary Oluwayemisi <br><img src="./Images/Star rating.png"></h1>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis</div></div>
+            <div class="comments"><img src="./Images/Ellipse 10 (2).png"><div class="bg_green"><h1>Winnifred Johnson <br><img src="./Images/Star rating.png"></h1>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis</div></div>
+        </div>
+        <div id="comment_box" class="page" data-page="3">
+            <div class="comments"><img src="./Images/Ellipse 10.png"><div class="bg_green"><h1>Adewale Anthony <br><img src="./Images/Star rating.png"></h1>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis</div></div>
+            <div class="comments"><img src="./Images/Ellipse 10 (1).png"><div class="bg_green"><h1>Mary Oluwayemisi <br><img src="./Images/Star rating.png"></h1>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis</div></div>
+            <div class="comments"><img src="./Images/Ellipse 10 (2).png"><div class="bg_green"><h1>Winnifred Johnson <br><img src="./Images/Star rating.png"></h1>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis</div></div>
+        </div>
+       </div>
      </div>
      <div id="section_e">
          <iframe src="newsletter.html" ></iframe>

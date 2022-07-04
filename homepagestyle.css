@@ -149,7 +149,7 @@ margin-bottom: 50px;
    text-align: center;
    border-top-left-radius: 15px;
    border-bottom-left-radius: 15px;
-   background-image: url(/Images/Icon.png);
+   background-image: url(./Images/Icon.png);
    background-repeat: no-repeat;
    background-position: center;
    background-color: white;
@@ -296,7 +296,7 @@ margin-bottom: 50px;
     padding: 0;
     width: 1440px;
     height: 1100px;
-    background-image: url(/Images/Vector\ 1.png);
+    background-image: url(./Images/Vector\ 1.png);
     background-repeat: no-repeat;
     background-position: left;
     display: flex;
@@ -314,7 +314,7 @@ margin-bottom: 50px;
     margin-top: 0;
     margin-left: 50px;
     text-align: center;
-    background-image: url(/Images/Ellipse\ 7.png);
+    background-image: url(./Images/Ellipse\ 7.png);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -357,9 +357,39 @@ margin-bottom: 50px;
 #section_d h1{
     text-align: center;
 }
+
+#section_d nav{
+    width: fit-content;
+    height: 60px;
+    text-align: right;
+    margin-left: 1200px;
+    display: flex;
+}
+
+#section_d nav .btn{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #4BA90A;
+    border-radius: 2px0;
+    padding-left: 4px;
+    padding-right: 4px;
+    width: 30px;
+    margin-left: 6px;
+}
+
+#section_d nav .btn:focus{
+    font-weight: 700;
+    background-color: #4BA90A;
+    cursor: pointer;
+}
+
+#section_d .page{
+    display: none;
+}
+
 #comment_box{
 margin: 0;
-display: flex;
 }
 .comments{
     width: 409px;
