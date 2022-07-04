@@ -1,47 +1,56 @@
-const plus = document.querySelector(".plus"),
- minus = document.querySelector(".minus")
- num = document.querySelector(".quantity-input");
-
- let a = 1;
-
-plus.addEventListener("click", ()=>{
-     a++;
-     num.innerText = a;
-
-});
-
-minus.addEventListener("click", ()=>{
-    if(a > 1){
-        a--;
-        num.innerText = a;
-        
+function validateForm(){
+    let x = document.forms["myform"]["email"].value;
+    if(x == ""){
+        alert ("Enter your Email address");
     }
-});
-
-
-var removeCartItemButtons = document.getElementsByClassName("delete")
-console.log(removeCartItemButtons)
-for (var i = 0; i < removeCartItemButtons.length; i++) {
-    var button = removeCartItemButtons[i]
-    button.addEventListener("click", function(event) {
-        var buttonClicked = event.target
-        buttonClicked.parentElement.parentElement.remove()
-        updateCartTotal()
-    })
+    let y = document.forms["myform"]["password"].value;
+    if(y == ""){
+        alert ("Please input your password");
+    }
 }
 
-
-function updateCartTotal() {
-    var cartItemContainer = document.getElementsByClassName("cart-col")[0]
-    var cartRows = cartItemContainer.getElementsByClassName("card")
-    var total = 0
-    for (var i = 0; i < cartRows.length; i++) {
-        var cartRow = cartRows[i]
-        var priceElement = document.getElementsByClassName("price")[0]
-        var quantityElement = cartRow.getElementsByClassName("quantity-input")[0]
-        var price = parseFloat(priceElement.innerText.replace("$", ""))
-        var quantity = quantityElement.innerText
-        total = total + (price * quantity)
+function validateForm2(){
+    let a = document.forms["myform2"]["first_name"].value;
+    if (a == "") {
+      alert("First name must be filled out");
+      return false;
     }
-    document.getElementsByClassName("total-amt")[0].innerText = "$" + total
+    let b = document.forms["myform2"]["last_name"].value;
+    if (b == "") {
+      alert("Last name must be filled out");
+      return false;
+    }
+    let c = document.forms["myform2"]["email_address"].value;
+    if (c == "") {
+      alert("Email must be filled out");
+      return false;
+    }
+    let d = document.forms["myform2"]["password"].value;
+    if (d == "") {
+      alert("Enter a password");
+      return false;
+    }
+    let g = document.forms["myform2"]["t_c"].checked;
+    if (g == false) {
+      alert("Agree to the T's and C's.");
+      return false;
+    }
+    let e = document.forms["myform2"]["confirm_password"].value;
+    if (e == "") {
+      alert("Confirm your password");
+      return false;
+    }
+    if(e === d){
+        return true;
+    }else {
+        alert ("Passwords do not match!");
+        return false;
+    }
+}
+
+function validateForm3(){
+  let x = document.forms["myform3"]["Email"].value;
+  if(x == ""){
+      alert ("Enter your Email address");
+  }
 }
