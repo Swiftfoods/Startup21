@@ -5,6 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+
+        <!---- font awesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <title>Swiftfoods</title>
         
     </head>
@@ -26,19 +30,109 @@
 
         <!-------------------     CART PAGE  ------------------>
 
-
-        <h1>THIS IS THE CART PAGE</h1>
-
-
-
-
+        
 
          <!----------- LET THIS BE THE DIV FOR THE LAST SECTION OF THIS PAGE-->
          <div id="container">
             <div id="main">
-               <h1>THIS IS THE CART PAGE LAST SECTION</h1>
+               <div class="cart">
+                <h1>Cart</h1>
+                <div class="cart-row">
+                    <div class="cart-col">
+                        <div class="card">
+                            <img src="images/mamaputin-img4.png" alt="Rice and Veggie Sauce" >
+                            <div class="card-name">
+                                <h4>Rice and Veggie Sauce</h4>
+                                <p>The in-house pasta and chicken by chef Moose</p>
+                            </div>
+                            <div class="price-delete">
+                                <p class="price">$30.00</p>
+                                <div class="quantity">
+                                    <span class="minus">-</span>
+                                    <span class="quantity-input" >1</span>
+                                    <span class="plus">+</span>
+                                </div>
+                                <p class="delete"><i class="fa fa-trash"></i> Delete</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="images/mamaputin-img3.png" alt="Rice and Veggie Sauce" >
+                            <div class="card-name">
+                                <h4>Rice and Veggie Sauce</h4>
+                                <p>The in-house pasta and chicken by chef Moose</p>
+                            </div>
+                            <div class="price-delete">
+                                <p class="price">$30.00</p>
+                                <div class="quantity">
+                                    <span class="minus">-</span>
+                                    <span class="quantity-input" >1</span>
+                                    <span class="plus">+</span>
+                                </div>
+                                <p class="delete"><i class="fa fa-trash"></i> Delete</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="images/mamaputin-img2.png" alt="Rice and Veggie Sauce" >
+                            <div class="card-name">
+                                <h4>Rice and Veggie Sauce</h4>
+                                <p>The in-house pasta and chicken by chef Moose</p>
+                            </div>
+                            <div class="price-delete">
+                                <p class="price">$30.00</p>
+                                <div class="quantity">
+                                    <span class="minus">-</span>
+                                    <span class="quantity-input" >1</span>
+                                    <span class="plus">+</span>
+                                </div>
+                                <p class="delete"><i class="fa fa-trash"></i> Delete</p>
+                            </div>
+                        </div>
+
+                         
+                        
+                     </div>
+                     <div class="cart-col">
+                        <div class="cart-col2">
+                            <div class="cart-total">
+                                <p>Subtotal</p>
+                                <p >Delivery fee<span>$10.00</span></p>
+                                <p class="total">Total<span class="total-amt">$90.00</span></p>
+                                <p class="info">Additional fees and taxes may apply</p>
+                            </div>
+                            <h3>Payment method</h3>
+                            <div class="cart-total">
+                                <form>
+                                    <input type="radio" id="card" name="card" value="card">
+                                    <label for="card">Credit/Debit card<img src="images/Mastercard Logo.png"><img src="images/Visa.png"></label><br>
+                                    <input type="radio" id="cash" name="cash" value="cash">
+                                    <label for="cash">Cash on delivery</label>
+                                  </form>
+                            </div>
+                            <a  href="checkout.html" class="proceed">Proceed to checkout</a>
+                        </div>
+                     </div>
+                </div>
+                  
+                  <form class="coupon" action="code">
+                    <label for="coupon"><h2>Coupon Apply</h2></label><br>
+                    <input type="text" id="coupon" name="coupon" value="Enter code here">
+                    <input type="submit" value="Apply" class="apply">
+                  </form>
+
+                  <img src="images/cart-img.png" alt="cart-img" class="cart-img">
+
+
+               </div>
             </div>
         </div>
+
+
+
+
+        
+        
 
 
 
@@ -49,7 +143,7 @@
            <div class="footer-container">
                <div class="footer-row">
                    <div class="footer-col">
-                       <h1><a href="">Swiftfoods</a></h1>
+                    <span><img src="images/swiftfood-logo.png" alt="logo"></span>
                    </div>
                    <div class="footer-col ">
                        <h4><a href="">Home</a></h4>
@@ -86,8 +180,8 @@
                    <div class="footer-col">
                        <h4><a href="">Install App</a></h4>
                        <ul>
-                           <li><a href="#">Google play img</a></li>
-                           <li><a href="#">App store img</a></li>
+                            <li><img src="images/goggle-play-img.png"></li>
+                            <li><img src="images/app-store-img.png"></li>
                        </ul>
                    </div>
                </div>
@@ -96,9 +190,9 @@
                        <p>&#169; 2022 Swiftfoods.ng <span>All rights reserved</span></p>
                    </div>
                    <div class="footer-col2">
-                       <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                       <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                       <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                       <a href="#"><i class="fa fa-instagram"></i></a>
+                       <a href="#"><i class="fa fa-twitter"></i></a>
+                       <a href="#"><i class="fa fa-youtube-square"></i></a>
                    </div>
                </div>
            </div>
@@ -106,6 +200,6 @@
 
 
 
-        <script src="script.js" ></script>
+        <script src="script.js" async></script>
     </body>
 </html>
