@@ -1,6 +1,6 @@
 body{
 margin: 0;
-padding-left: 0;
+padding-left: 10px;
 padding-right: 30.45px;
 font-family: 'Montserrat', sans-serif;
 background-color: #ebebe0;
@@ -139,7 +139,7 @@ margin-right: 0;
 
 #right_a{
     float: right;
-    margin-left: 92.33px;
+    margin-left: 122.33px;
     width: 820.55px;
     height: 775.55px;
     background-image: url(./Images/Ellipse\ 9.png);
