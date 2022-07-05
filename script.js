@@ -20,12 +20,12 @@ function validateForm2(){
       alert("Last name must be filled out");
       return false;
     }
-    let f = document.forms["myform2"]["phone_number"].value;
+    let f = document.forms["myform2"]["phone"].value;
     if (f == "") {
       alert("Enter your Phone Number");
       return false;
     }
-    let c = document.forms["myform2"]["email_address"].value;
+    let c = document.forms["myform2"]["email"].value;
     if (c == "") {
       alert("Email must be filled out");
       return false;

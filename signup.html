@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="findastorestyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+    <script src="script.js"></script> 
     <title>Sign Up</title>
 </head>
 <body>
@@ -36,11 +35,11 @@
                 <h1>Sign Up</h1>
            </div>
             <div id="content_container">
-                <form name="myform2" onsubmit="return validateForm2()">
+                <form name="myform2" onsubmit="return validateForm2()" method="post" action="https://swiftfoodapi.herokuapp.com/API/v1/customers/register">
                     <label name="first_name">First name<br> <input class="textarea" type="text" name="first_name"></label><br>
                     <label name="last_name">Last name <br><input class="textarea" type="text" name="last_name"></label><br>
-                    <label name="phone_number">Phone Number<br><input class="textarea" type="tel" name="phone_number"></label><br>
-                    <label name="email_address">Email address<br> <input class="textarea" type="email" name="email_address"></label><br>
+                    <label name="phone">Phone Number<br><input class="textarea" type="tel" name="phone"></label><br>
+                    <label name="email">Email address<br> <input class="textarea" type="email" name="email"></label><br>
                     <label name="password">Password <br><input class="textarea" type="password" name="password"></label><br>
                     <label name="confirm_password">Confirm Password <br><input class="textarea" type="password" name="confirm_password"></label><br>
                     <div id="t_c"><label name="t_c"><input id="T_C" type="checkbox" name="t_c"> Yes, I have read and accepted all SwiftFoods <a href="" id="terms">Terms and Conditions</a>.</label></div><br>
