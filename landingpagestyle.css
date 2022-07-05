@@ -1,10 +1,11 @@
 body{
 margin: 0;
-padding-left: 10px;
-padding-right: 30.45px;
+padding-left: 0;
+padding-right: 0;
 font-family: 'Montserrat', sans-serif;
 background-color: #ebebe0;
-
+width: 100%;
+align-content: center;
 }
 
 #logo{
@@ -14,12 +15,13 @@ background-color: #ebebe0;
 #navbar {
     position: fixed;
     display: block;
-width: 1500px;
+width: 100%;
     height: 87px;
     background-color: white;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     box-shadow:  10px 5px 15px gray;
+    justify-content: space-between;
 }
 
 #navbar::after{
@@ -32,7 +34,7 @@ width: 1500px;
     margin-top: 20px;
     margin-bottom: 16px;
     margin-left: 33px;
-    margin-right: 13px;
+    margin-right: 0;
     display:block;
     float: left;
 }
@@ -93,7 +95,7 @@ margin-right: 0;
     margin-right: 53px;
     margin-top: 25px;
     margin-bottom: 18px;
-    margin-left: 553.98px;
+    margin-left: 48%;
     height: 44px;
     width: 154px;
     border: 2px solid #4BA90A;
@@ -111,6 +113,8 @@ margin-right: 0;
 #main_container{
     display: block;
     padding-top: 120.66px;
+    text-align: center;
+    width: 100%;
 }
 
 #section_a{
@@ -176,7 +180,7 @@ margin-right: 0;
 #section_b{
     margin-top: 61px;
     margin-left: 106px;
-    width: 1228px;
+    width: 100%;
     height: 307px;
     text-align: center;
 }
@@ -216,6 +220,7 @@ margin-right: 0;
 #section_c{  
     margin-top: 70px;
     text-align: center;
+    width: 100%;
 }
 .header_c {
     text-decoration: underline;
@@ -289,6 +294,8 @@ margin-right: 0;
     margin-top: 50px;
     height: 352px;
     width: 1400px;
+    text-align: left;
+    width: 100%;
 }
 
 #Email{
