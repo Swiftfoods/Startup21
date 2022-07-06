@@ -69,7 +69,7 @@ function showPage(panelIndex, color){
   buttons.forEach(function(node){
    node.style.fontWeight='';
   });
-  buttons[panelIndex].style.backgroundColor=color;
+  buttons[panelIndex].style.backgroundColor= color;
   pages.forEach(function(node){
     node.style.display="none"
   });
@@ -77,7 +77,7 @@ function showPage(panelIndex, color){
 
 }
 
-showPage(0);
+
 
 function validateForm4(){
   let a = document.forms["myform4"]["branch_name"].value;
@@ -139,3 +139,7 @@ function popupMenu() {
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
 }
+
+fetch('https://swiftfoodng-api.herokuapp.com/API/v1/customers/register', {method:'GET', mode:'no-cors'})
+.then(res => res.json)
+.then(data => console.log(data))
