@@ -140,6 +140,13 @@ function popupMenu() {
   popup.classList.toggle("show");
 }
 
-fetch('https://swiftfoodng-api.herokuapp.com/API/v1/customers', {method:'GET', mode:'no-cors'})
-.then(res => res.json)
+fetch('https://swiftfoodng-api.herokuapp.com/API/v1/', {method:'GET', mode:'no-cors'})
+.then(res => {
+  if (res.ok) {
+    console.log('Successful');
+  } else{
+    console.log('Not Successful')
+  }
+})
 .then(data => console.log(data))
+.catch(error=> console.log('ERROR'))
