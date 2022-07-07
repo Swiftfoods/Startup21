@@ -140,7 +140,7 @@ function popupMenu() {
   popup.classList.toggle("show");
 }
 
-fetch('https://swiftfoodng-api.herokuapp.com/API/v1/auth/customers/login/1', {method:'POST', mode:'no-cors'})
+fetch('https://swiftfoodapi.herokuapp.com/API/v1/customers', {method:'GET', mode:'no-cors'})
 .then(res => {
   if (res.ok) {
     console.log('Successful');
@@ -148,5 +148,5 @@ fetch('https://swiftfoodng-api.herokuapp.com/API/v1/auth/customers/login/1', {me
     console.log('Not Successful')
   }
 })
-.then(status => console.log(status))
+.then(data => console.log(data))
 .catch(error=> console.log('ERROR'))
