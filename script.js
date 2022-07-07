@@ -7,9 +7,6 @@ function validateForm(){
     if(y == ""){
         alert ("Please input your password");
     }
-    async function login(){
-      const api_url = 'https://swiftfoodng-api.herokuapp.com/API/v1/auth/customers/login'
-    };
    const response = res.json();
     if(response.status === true){
       window.location.href = response.redirect('homepage.html');
