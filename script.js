@@ -7,6 +7,15 @@ function validateForm(){
     if(y == ""){
         alert ("Please input your password");
     }
+    async function login(){
+      const api_url = 'https://swiftfoodng-api.herokuapp.com/API/v1/auth/customers/login'
+    };
+   const response = res.json();
+    if(response.status === true){
+      window.location.href = response.redirect('homepage.html');
+    } else if (response.status === false){
+      alert("Email or Password Invalid")
+    }
 }
 
 function validateForm2(){
@@ -139,7 +148,7 @@ function popupMenu() {
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
 }
-
+a
 fetch('https://swiftfoodapi.herokuapp.com/API/v1/customers', {method:'GET', mode:'no-cors'})
 .then(res => {
   if (res.ok) {
