@@ -11,6 +11,16 @@ function validateForm(){
     window.location.replace("homepage.html")
 }
 
+async function Submit(myform){
+  const request = await fetch(`https://swiftfoodapi.herokuapp.com/API/v1/auth/customers/login`,{method:"post"});
+  const response = await request.json();
+  if(response.status === true){
+    console.log(response)
+  }else{
+    console.log("ERROR OCCURED")
+  }
+}
+
 
 
 function validateForm2(){
