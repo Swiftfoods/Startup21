@@ -156,7 +156,7 @@ async function getData( url='', data={}){
     },
     redirect:'follow'
   });
-  return response.json();
+  return response.json()
 
 }
 getData('https://swiftfoodapi.herokuapp.com/API/v1/customers',{id:2})
