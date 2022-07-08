@@ -7,12 +7,8 @@ function validateForm(){
     if(y == ""){
         alert ("Please input your password");
     }
-   const response = res.json();
-    if(response.status === true){
-      window.location.href = response.redirect('homepage.html');
-    } else if (response.status === false){
-      alert("Email or Password Invalid")
-    }
+    window.location.href="homepage.html"
+    
 }
 
 function validateForm2(){
