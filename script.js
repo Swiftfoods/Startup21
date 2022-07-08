@@ -10,7 +10,6 @@ function validateForm(){
     function reDirect(){
       window.location.replace= "https://swiftfoodng.netlify.app/homepage.html"
     }
-    validateForm();
     reDirect();
 }
 
