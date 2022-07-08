@@ -142,13 +142,14 @@ function popupMenu() {
   popup.classList.toggle("show");
 }
 
-fetch('https://swiftfoodng-api.herokuapp.com/API/v1/auth/customers/login', {method:'POST', mode:'no-cors'})
+fetch('https://swiftfoodng-api.herokuapp.com/API/v1/auth/customers/login', {method:'GET', mode:'no-cors'})
 .then(res => {
-  if (res.status === true) {
-    Response.redirect('homepage.html');
-  } else{
-    alert('Email or Password invalid')
+  if (res.ok){
+    console.log("success")
+  } else {
+    console.log($status)
   }
+  
 })
 .then(data => console.log(data))
 .catch(error=> console.log('ERROR'))
