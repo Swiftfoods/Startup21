@@ -7,8 +7,10 @@ function validateForm(){
     if(y == ""){
         alert ("Please input your password");
     }
-  
-    
+    let q = response.json();
+    if(y.status === 'true'){
+      location.href='homepage.html'
+    }
 }
 
 function validateForm2(){
