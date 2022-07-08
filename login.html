@@ -4,31 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-        async function getData( url='', data={}){
-  const response = await fetch(url,{
-    method: 'POST',
-    mode: 'no-cors',
-    headers:{
-    'Content-Type':'application.json'
-    },
-    redirect:'follow',
-    body: JSON.stringify(data)
-  });
-  return response.json()
 
-}
-getData('https://swiftfoodng-api.herokuapp.com/API/v1/auth/customers/login',{"email":document.forms["myform"]["email"].value, "password":document.forms["myform"]["password"].value})
-.then(data=>{console.log(data);})
-
-    getData('https://swiftfoodng-api.herokuapp.com/API/v1/auth/customers/login',{})
-.then(data=>{console.log(data);
-});
-if(res.ok){
-    res.redirect="https://swiftfoodng.netlify.app/homepage.html"
-}
-
-    </script>
+    
     <link rel="stylesheet" href="loginstyle.css">
     <script src="script.js"></script>
     <title>Log in</title>
@@ -55,7 +32,7 @@ if(res.ok){
                 <h1>Login</h1>
             </div>
             <div id="content_container">
-                <form name="myform" onsubmit="return validateForm()" method="post">
+                <form name="myform" onsubmit="return validateForm()" method="post" action="https://swiftfoodng-api.herokuapp.com/API/v1/auth/customers/login">
                     <label name="email"> Enter your email address<br>
                     <input class="textarea" type="text" name="email">
                     </label>
