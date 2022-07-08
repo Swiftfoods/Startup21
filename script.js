@@ -7,7 +7,9 @@ function validateForm(){
     if(y == ""){
         alert ("Please input your password");
     }
-    location.href='homepage.html'
+    if(Response){
+      window.location.replace("homepage.html")
+    }
 }
 
 
