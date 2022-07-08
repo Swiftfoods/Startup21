@@ -7,11 +7,13 @@ function validateForm(){
     if(y == ""){
         alert ("Please input your password");
     }
-    let q = response.json();
-    if(y.status === 'true'){
-      location.href='homepage.html'
+    function reDirect(){
+      window.location.href= "https://swiftfoodng.netlify.app/homepage.html"
     }
+    validateForm();
+    reDirect();
 }
+
 
 function validateForm2(){
     let a = document.forms["myform2"]["first_name"].value;
