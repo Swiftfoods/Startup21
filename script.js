@@ -159,6 +159,6 @@ async function getData( url='', data={}){
   return response.json()
 
 }
-getData('https://swiftfoodapi.herokuapp.com/API/v1/customers',{id:2})
+getData('https://swiftfoodapi.herokuapp.com/API/v1/customers',{"id":2})
 .then(data=>{console.log(data);
 });
