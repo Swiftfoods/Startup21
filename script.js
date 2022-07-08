@@ -137,28 +137,9 @@ if(x == ""){
 }
 }
 
-function popupMenu() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}
 
 fetch('https://swiftfoodapi.herokuapp.com/API/v1/customers', {method:'GET', mode:'no-cors'})
 .then(Response => Response.json())
 .then(data => console.log(data))
 .catch(error=> console.log('ERROR'))
 
-async function getData( url='', data={}){
-  const response = await fetch(url,{
-    method: 'GET',
-    mode: 'no-cors',
-    headers:{
-    'Content-Type':'application.json'
-    },
-    redirect:'follow'
-  });
-  return response.json()
-
-}
-getData('https://swiftfoodapi.herokuapp.com/API/v1/customers',{"id":2})
-.then(data=>{console.log(data);
-});
