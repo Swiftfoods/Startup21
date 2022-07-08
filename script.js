@@ -154,7 +154,7 @@ async function getData( url='', data={}){
     headers:{
     'Content-Type':'application.json'
     },
-    redirect:'manual'
+    redirect:'follow'
   });
   return Response.json();
 
