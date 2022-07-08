@@ -10,7 +10,7 @@ function validateForm(){
     
 }
 
-const thisForm = document.getElementById('myForm');
+const thisForm = document.getElementById('myform');
 thisForm.addEventListener('submit', async function (e) {
     e.preventDefault();
     const formData = new FormData(thisForm).entries()
@@ -23,6 +23,21 @@ thisForm.addEventListener('submit', async function (e) {
     const result = await response.json();
     console.log(result)
 });
+
+const thatForm = document.getElementById('myform2');
+thatForm.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const formData = new FormData(thatForm).entries()
+    const response = await fetch('https://swiftfoodng-api.herokuapp.com/API/v1/customers/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(Object.fromEntries(formData))
+    });
+
+    const result = await response.json();
+    console.log(result)
+});
+
 
 
 function validateForm2(){
