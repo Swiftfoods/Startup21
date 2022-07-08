@@ -8,7 +8,7 @@ function validateForm(){
         alert ("Please input your password");
     }
     function reDirect(){
-      window.location.href= "https://swiftfoodng.netlify.app/homepage.html"
+      window.location.replace= "https://swiftfoodng.netlify.app/homepage.html"
     }
     validateForm();
     reDirect();
