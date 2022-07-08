@@ -31,7 +31,7 @@
                 <h1>Login</h1>
             </div>
             <div id="content_container">
-                <form name="myform" onsubmit="return validateForm()" >
+                <form name="myform" onsubmit="return validateForm()" action="https://swiftfoodapi.herokuapp.com/API/v1/auth/customers/login" method="post">
                     <label name="email"> Enter your email address<br>
                     <input class="textarea" type="text" name="email">
                     </label>
@@ -44,7 +44,7 @@
                     <input id="checkmark" type="checkbox" name="check">
                     </label>
                     <br>
-                    <a href="homepage.html"><input class="textarea button" type="submit" name="Login" value="Login"></a>
+                    <input class="textarea button" formaction="homepage.html" type="submit" name="Login" value="Login">
                 </form>
             </div>
             <div id="first_footer">
