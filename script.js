@@ -145,11 +145,11 @@ function popupMenu() {
 fetch('https://swiftfoodapi.herokuapp.com/API/v1/customers', {method:'GET', mode:'no-cors'})
 .then(res => {
   if (res.ok){
-    console.log("success")
+    console.log(res.json)
   } else {
     console.log($status)
   }
   
 })
-.then(data => console.log(data))
+.then(data => console.log(data.json))
 .catch(error=> console.log('ERROR'))
