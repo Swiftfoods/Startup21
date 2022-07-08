@@ -7,10 +7,22 @@ function validateForm(){
     if(y == ""){
         alert ("Please input your password");
     }
-    if(Response){
-      window.location.replace("homepage.html")
-    }
+    
 }
+
+const thisForm = document.getElementById('myForm');
+thisForm.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const formData = new FormData(thisForm).entries()
+    const response = await fetch('https://swiftfoodng-api.herokuapp.com/API/v1/auth/customers/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(Object.fromEntries(formData))
+    });
+
+    const result = await response.json();
+    console.log(result)
+});
 
 
 function validateForm2(){
