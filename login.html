@@ -18,10 +18,10 @@
   return response.json()
 
 }
-getData('https://swiftfoodng-api.herokuapp.com/API/v1/auth/customers/login',{"email":document.forms["myform"]["email"].value})
+getData('https://swiftfoodng-api.herokuapp.com/API/v1/auth/customers/login',{"email":document.forms["myform"]["email"].value, "password":document.forms["myform"]["password"].value})
 .then(data=>{console.log(data);})
 
-    getData('https://swiftfoodng-api.herokuapp.com/API/v1/auth/customers/login',{"password":document.forms["myform"]["password"].value})
+    getData('https://swiftfoodng-api.herokuapp.com/API/v1/auth/customers/login',{})
 .then(data=>{console.log(data);
 });
 if(res.ok){
@@ -55,7 +55,7 @@ if(res.ok){
                 <h1>Login</h1>
             </div>
             <div id="content_container">
-                <form name="myform" onsubmit="return validateForm()" >
+                <form name="myform" onsubmit="return validateForm()" method="post">
                     <label name="email"> Enter your email address<br>
                     <input class="textarea" type="text" name="email">
                     </label>
