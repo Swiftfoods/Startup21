@@ -1,4 +1,5 @@
 function validateForm(){
+   
     let x = document.forms["myform"]["email"].value;
     if(x == ""){
         alert ("Enter your Email address");
@@ -7,36 +8,8 @@ function validateForm(){
     if(y == ""){
         alert ("Please input your password");
     }
-    
+    window.location.replace("homepage.html")
 }
-
-const thisForm = document.getElementById('myform');
-thisForm.addEventListener('submit', async function (e) {
-    e.preventDefault();
-    const formData = new FormData(thisForm).entries()
-    const response = await fetch('https://swiftfoodng-api.herokuapp.com/API/v1/auth/customers/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(Object.fromEntries(formData))
-    });
-
-    const result = await response.json();
-    console.log(result)
-});
-
-const thatForm = document.getElementById('myform2');
-thatForm.addEventListener('submit', async function (e) {
-    e.preventDefault();
-    const formData = new FormData(thatForm).entries()
-    const response = await fetch('https://swiftfoodng-api.herokuapp.com/API/v1/customers/register', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(Object.fromEntries(formData))
-    });
-
-    const result = await response.json();
-    console.log(result)
-});
 
 
 
