@@ -10,29 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="script.js"></script> 
-    <script>
-        const myForm = document.getElementById('myform2');
-        myForm.addEventListener('submit', function (e){
-           e.preventDefault();
-
-
-           const formData= new FormData(this);
-
-           fetch('https://swiftfoodapi.herokuapp.com/API/v1/customers/register', {
-            method:"post",
-            mode:"no-cors",
-            redirect:"error",
-            body:formData
-           }).then(function(response){
-            return response.text();
-           }).then(function(text){
-            console,log(text);
-           }).catch(function(error){
-            console.error(error);
-           })
-        })
-    </script>
-
     <title>Sign Up</title>
 </head>
 <body>
