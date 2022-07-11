@@ -4,7 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <script>
+        const myForm = document.getElementById('myform');
+        myForm.addEventListener('submit', function (e){
+           e.preventDefault();
+
+
+           const formData= new FormData(this);
+
+           fetch('https://swiftfoodapi.herokuapp.com/API/v1/auth/customers/login', {
+            method:"post",
+            mode:"no-cors",
+            redirect:"error",
+            body:formData
+           }).then(function(response){
+            return response.text();
+           }).then(function(text){
+            console,log(text);
+           }).catch(function(error){
+            console.error(error);
+           })
+        })
+    </script>
     <link rel="stylesheet" href="loginstyle.css">
     <script src="script.js"></script>
     <title>Log in</title>
@@ -31,7 +52,7 @@
                 <h1>Login</h1>
             </div>
             <div id="content_container">
-                <form name="myform" id="myform" onsubmit="return validateForm()" action="https://swiftfoodapi.herokuapp.com/API/v1/auth/customers/login" method="post">
+                <form name="myform" id="myform" onsubmit="return validateForm()" >
                     <label name="email"> Enter your email address<br>
                     <input class="textarea" type="text" name="email">
                     </label>
