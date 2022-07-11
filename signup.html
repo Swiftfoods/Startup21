@@ -10,6 +10,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="script.js"></script> 
+    <script>
+        const myForm = document.getElementById('myform2');
+        myForm.addEventListener('submit', function (e){
+           e.preventDefault();
+
+
+           const formData= new FormData(this);
+
+           fetch('https://swiftfoodapi.herokuapp.com/API/v1/customers/register', {
+            method:"post",
+            mode:"no-cors",
+            redirect:"error",
+            body:formData
+           }).then(function(response){
+            return response.text();
+           }).then(function(text){
+            console,log(text);
+           }).catch(function(error){
+            console.error(error);
+           })
+        })
+    </script>
+
     <title>Sign Up</title>
 </head>
 <body>
@@ -36,7 +59,7 @@
                 <h1>Sign Up</h1>
            </div>
             <div id="content_container">
-                <form name="myform2" onsubmit="return validateForm2()" action="https://swiftfoodapi.herokuapp.com/API/v1/customers/register" method="post" >
+                <form name="myform2" onsubmit="return validateForm2()">
                     <label name="first_name">First name<br> <input class="textarea" type="text" name="first_name"></label><br>
                     <label name="last_name">Last name <br><input class="textarea" type="text" name="last_name"></label><br>
                     <label name="phone">Phone Number<br><input class="textarea" type="tel" name="phone"></label><br>
