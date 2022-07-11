@@ -141,8 +141,31 @@ if(x == ""){
 }
 
 
-fetch('https://swiftfoodapi.herokuapp.com/API/v1/customers', {method:'GET', mode:'no-cors'})
-.then(Response => Response.json())
-.then(data => console.log(data))
-.catch(error=> console.log('ERROR'))
+
+
+const myForm = document.getElementById('myform2');
+myForm.addEventListener('submit', function (e){
+    e.preventDefault();
+
+
+    const formData= new FormData(this);
+
+    fetch('https://swiftfoodapi.herokuapp.com/API/v1/customers/register',
+    {
+    method:"post",
+    mode:"no-cors",
+    redirect:"error",
+    body:formData
+    })
+    .then(function(response){
+    return response.text()
+    }
+    )
+    .then(function(text){
+    console,log(text)
+    }).catch(function(error){
+    console.error(error)
+    })
+})
+
 
