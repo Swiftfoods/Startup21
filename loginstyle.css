@@ -108,6 +108,7 @@ margin-right: 0;
     margin-left: 104px;
     margin-right: 190px;
     float: right;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #header_container{
@@ -125,6 +126,7 @@ margin-right: 0;
    width: 435px;
     height: fit-content;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 .textarea {
@@ -135,11 +137,12 @@ margin-right: 0;
     border-radius: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #textline {
     display: inline-block;
-
+    font-family: 'Montserrat', sans-serif;
     margin-bottom: 10px;
 }
 

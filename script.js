@@ -8,15 +8,12 @@ function validateForm(){
     if(y == ""){
         alert ("Please input your password");
     }
-    if(xhr.status === true)
-    window.location.replace("homepage.html")
-    if(xhr.status === false){
-      alert (Response.message)
-    }
+    
    
 }
 
 
+//window.location.href = JSON.parse(this.responseText).url;
 function validateForm2(){
     let a = document.forms["myform2"]["first_name"].value;
     if (a == "") {
