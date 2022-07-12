@@ -15,7 +15,7 @@
 <body>
     <div id="Navbar">
         <div id="navbar">
-            <img src="./Images/Logo.png">
+            <img src="./Images/Logo.png" alt='logo'>
             <nav id="header"> 
                 <ul>
                     <li><a href=""></a></li>
@@ -29,14 +29,14 @@
     </div>
     <div id="main_container">
         <div id="image_hub">
-            <img src="./Images/bon-vivant-qom5MPOER-I-unsplash 5.png">
+            <img src="./Images/bon-vivant-qom5MPOER-I-unsplash 5.png" alt='img'>
         </div>
         <div id="form_container">
             <div id="header_container"> 
                 <h1>Sign Up</h1>
            </div>
             <div id="content_container">
-                <form name="myform2" onsubmit="return validateForm2()">
+                <form name="myform2" onsubmit="windows.location.href('hompage.html')" method="post"  action="https://swiftfoodapi.herokuapp.com/API/v1/customers/register" redirect="error">
                     <label name="first_name">First name<br> <input class="textarea" type="text" name="first_name"></label><br>
                     <label name="last_name">Last name <br><input class="textarea" type="text" name="last_name"></label><br>
                     <label name="phone">Phone Number<br><input class="textarea" type="tel" name="phone"></label><br>
@@ -44,7 +44,7 @@
                     <label name="password">Password <br><input class="textarea" type="password" name="password"></label><br>
                     <label name="confirm_password">Confirm Password <br><input class="textarea" type="password" name="confirm_password"></label><br>
                     <div id="t_c"><label name="t_c"><input id="T_C" type="checkbox" name="t_c"> Yes, I have read and accepted all SwiftFoods <a href="" id="terms">Terms and Conditions</a>.</label></div><br>
-                    <a href="homepage.html"><input class="textarea button" type="submit" name="sign_up" value="Sign up" ></a>          
+                    <a href="homepage.html"><input onclick="return validateForm2()" class="textarea button" type="submit" name="sign_up" value="Sign up" ></a>          
                   </form>
             </div>
         </div>

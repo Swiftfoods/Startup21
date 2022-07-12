@@ -8,7 +8,7 @@ function validateForm(){
     if(y == ""){
         alert ("Please input your password");
     }
-    if(response.status === true)
+    if(response.ok)
     window.location.replace("homepage.html")
    
 }
@@ -143,29 +143,29 @@ if(x == ""){
 
 
 
-const myForm = document.getElementById('myform2');
-myForm.addEventListener('submit', function (e){
-    e.preventDefault();
+//const myForm = document.getElementById('myform2');
+//myForm.addEventListener('submit', function (e){
+  //  e.preventDefault();
 
 
-    const formData= new FormData(this);
+    //const formData= new FormData(this);
 
-    fetch('https://swiftfoodapi.herokuapp.com/API/v1/customers/register',
-    {
-    method:"post",
-    mode:"no-cors",
-    redirect:"error",
-    body:formData
-    })
-    .then(function(response){
-    return response.text()
-    }
-    )
-    .then(function(text){
-    console,log(text)
-    }).catch(function(error){
-    console.error(error)
-    })
-})
+    //fetch('https://swiftfoodapi.herokuapp.com/API/v1/customers/register',
+   // {
+ //   method:"post",
+  //  mode:"no-cors",
+//    redirect:"error",
+  //  body:formData
+  //  })
+   // .then(function(response){
+    //return response.text()
+    //}
+    //)
+    //.then(function(text){
+   // console,log(text)
+   // }).catch(function(error){
+    //console.error(error)
+  //  })
+//})
 
 
