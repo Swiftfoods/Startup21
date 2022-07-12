@@ -8,8 +8,11 @@ function validateForm(){
     if(y == ""){
         alert ("Please input your password");
     }
-    if(response.ok)
+    if(response.status === true)
     window.location.replace("homepage.html")
+    if(response.status === false){
+      alert (response.message)
+    }
    
 }
 
