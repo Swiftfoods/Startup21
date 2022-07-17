@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=0.95, user-scalable=yes, minimum-scale= 0.95, maximum-scale=1.5">
+    <script src="homepage.js" async></script>
     <script src="//code.tidio.co/sjluxqztaootrfgnnxqa9ihbdp2ixukg.js" async></script>
     <link rel="stylesheet" href="homepagestyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,49 +38,340 @@
              <input type="text" name="search" id="search_bar" placeholder="Search for your favorite foods">
          </div>
           <div id="btn_section_a">
-             <a><input class="btn btn_style_a" id="mgn" type="button" value="Breakfast"></a>
-             <a><input class="btn btn_style_a" id="mgn" type="button" value="Lunch"></a>
-             <a><input class="btn btn_style_b" id="mgn" type="button" value="Snacks & Chips"></a>
-             <a><input class="btn btn_style_a" id="mgn" type="button" value="Dinner"></a>
-             <a><input class="btn btn_style_a" id="mgn" type="button" value="Pasta"></a>
-             <a><input class="btn btn_style_a" id="mgn" type="button" value="African"></a>
-             <a><input class="btn btn_style_c" id="mgn" type="button" value="Salad"></a>
-             <a><input class="btn btn_style_c" id="mgn" type="button" value="Soups"></a>
-             <a><input class="btn btn_style_c" id="mgn" type="button" value="Special Combos"></a>
-             <a><input class="btn btn_style_a" type="button" value=" Dessert"></a>
+             <a><input onclick="showPage1(0)" class="btn btn_style_a" id="mgn" type="button" value="Breakfast"></a>
+             <a><input onclick="showPage1(1)" class="btn btn_style_a" id="mgn" type="button" value="Lunch"></a>
+             <a><input onclick="showPage1(2)" class="btn btn_style_b" id="mgn" type="button" value="Snacks & Chips"></a>
+             <a><input onclick="showPage1(3)" class="btn btn_style_a" id="mgn" type="button" value="Dinner"></a>
+             <a><input onclick="showPage1(4)" class="btn btn_style_a" id="mgn" type="button" value="Pasta"></a>
+             <a><input onclick="showPage1(5)" class="btn btn_style_a" id="mgn" type="button" value="African"></a>
+             <a><input onclick="showPage1(6)" class="btn btn_style_c" id="mgn" type="button" value="Salad"></a>
+             <a><input onclick="showPage1(7)" class="btn btn_style_c" id="mgn" type="button" value="Soups"></a>
+             <a><input onclick="showPage1(8)" class="btn btn_style_c" id="mgn" type="button" value="Special Combos"></a>
+             <a><input onclick="showPage1(9)" class="btn btn_style_a" id="mgn" type="button" value=" Dessert"></a>
           </div>
      </div>
      <div id="section_b">
-         <h1>African Menu</h1>
+      <h1></h1>
+        <div class="menu" data-page="1">
+         <h1>Breakfast Menu</h1>
          <div id="flexbox">
-             <div>
+             <div class="mini_menu">
                  <img class="food_c" src="./Images/Rectangle 24 (3).png">
                  <div class="price_tag">
-                     <p class="food_name"> Nacho Cheese Fries</p><p class="food_price">$40.00</p>
+                     <p class="food_name"> Nacho Cheese Fries</p><p class="food_price">&#8358;4000</p>
                  </div>
-                 <div class="cart_btn">
+                 <button class="cart_btn">
                      <a> Add to Cart &nbsp; &nbsp; &nbsp; <img src="./Images/Vector (2).png"></a>
-                 </div>
-                </div>
+                 </button>
+             </div>
              <div class="mini_menu">
                  <img class="food_c" src="./Images/Rectangle 24 (4).png">
                  <div class="price_tag">
-                     <p class="food_name">Hotdogs</p><p class="food_price">$50.00</p>
+                     <p class="food_name">Hotdogs</p><p class="food_price">&#8358;5000</p>
                  </div>
-                 <div class="cart_btn">
+                 <button class="cart_btn">
                      <a> Add to Cart &nbsp; &nbsp; &nbsp;<img src="./Images/Vector (2).png"></a>
-                 </div>
+                 </button>
                 </div>
              <div class="mini_menu">
                  <img class="food_c" src="./Images/Rectangle 24 (5).png">
                  <div class="price_tag">
-                     <p class="food_name"> Burgers,Fries and Nuggets</p><p class="food_price">$15.00</p>
+                     <p class="food_name"> Burgers,Fries and Nuggets</p><p class="food_price">&#8358;1500</p>
                   </div>
-                  <div class="cart_btn">
+                  <button class="cart_btn">
                      <a> Add to Cart &nbsp; &nbsp; &nbsp; <img src="./Images/Vector (2).png"></a>
                   </div>
-                </div>
+                </button>
           </div>
+     </div>
+     <div class="menu" data-page="2">
+        <h1>Lunch Menu</h1>
+        <div id="flexbox">
+            <div class="mini_menu">
+                <img class="food_c" src="./Images/Rectangle 24 (3).png">
+                <div class="price_tag">
+                    <p class="food_name"> Nacho Cheese Fries</p><p class="food_price">$40.00</p>
+                </div>
+                <button class="cart_btn">
+                    <a> Add to Cart &nbsp; &nbsp; &nbsp; <img src="./Images/Vector (2).png"></a>
+                </div>
+               </button>
+            <div class="mini_menu">
+                <img class="food_c" src="./Images/Rectangle 24 (4).png">
+                <div class="price_tag">
+                    <p class="food_name">Hotdogs</p><p class="food_price">$50.00</p>
+                </div>
+                <button class="cart_btn">
+                    <a> Add to Cart &nbsp; &nbsp; &nbsp;<img src="./Images/Vector (2).png"></a>
+                </button>
+               </div>
+            <div class="mini_menu">
+                <img class="food_c" src="./Images/Rectangle 24 (5).png">
+                <div class="price_tag">
+                    <p class="food_name"> Burgers,Fries and Nuggets</p><p class="food_price">$15.00</p>
+                 </div>
+                 <button class="cart_btn">
+                    <a> Add to Cart &nbsp; &nbsp; &nbsp; <img src="./Images/Vector (2).png"></a>
+                 </button>
+               </div>
+         </div>
+    </div>
+    <div class="menu" data-page="3">
+        <h1>Snacks & Chips Menu</h1>
+        <div id="flexbox">
+            <div class="mini_menu">
+                <img class="food_c" src="./Images/Rectangle 24 (3).png">
+                <div class="price_tag">
+                    <p class="food_name"> Nacho Cheese Fries</p><p class="food_price">$40.00</p>
+                </div>
+                <button class="cart_btn">
+                    <a> Add to Cart &nbsp; &nbsp; &nbsp; <img src="./Images/Vector (2).png"></a>
+                </div>
+               </button>
+            <div class="mini_menu">
+                <img class="food_c" src="./Images/Rectangle 24 (4).png">
+                <div class="price_tag">
+                    <p class="food_name">Hotdogs</p><p class="food_price">$50.00</p>
+                </div>
+                <button class="cart_btn">
+                    <a> Add to Cart &nbsp; &nbsp; &nbsp;<img src="./Images/Vector (2).png"></a>
+                </button>
+               </div>
+            <div class="mini_menu">
+                <img class="food_c" src="./Images/Rectangle 24 (5).png">
+                <div class="price_tag">
+                    <p class="food_name"> Burgers,Fries and Nuggets</p><p class="food_price">$15.00</p>
+                 </div>
+                 <button class="cart_btn">
+                    <a> Add to Cart &nbsp; &nbsp; &nbsp; <img src="./Images/Vector (2).png"></a>
+                 </button>
+               </div>
+         </div>
+    </div>
+    <div class="menu" data-page="4">
+        <h1>Dinner Menu</h1>
+        <div id="flexbox">
+            <div class="mini_menu">
+                <img class="food_c" src="./Images/Rectangle 24 (3).png">
+                <div class="price_tag">
+                    <p class="food_name"> Nacho Cheese Fries</p><p class="food_price">$40.00</p>
+                </div>
+                <button class="cart_btn">
+                    <a> Add to Cart &nbsp; &nbsp; &nbsp; <img src="./Images/Vector (2).png"></a>
+                </button>
+               </div>
+            <div class="mini_menu">
+                <img class="food_c" src="./Images/Rectangle 24 (4).png">
+                <div class="price_tag">
+                    <p class="food_name">Hotdogs</p><p class="food_price">$50.00</p>
+                </div>
+                <button class="cart_btn">
+                    <a> Add to Cart &nbsp; &nbsp; &nbsp;<img src="./Images/Vector (2).png"></a>
+                </div>
+               </button>
+            <div class="mini_menu">
+                <img class="food_c" src="./Images/Rectangle 24 (5).png">
+                <div class="price_tag">
+                    <p class="food_name"> Burgers,Fries and Nuggets</p><p class="food_price">$15.00</p>
+                 </div>
+                 <button class="cart_btn">
+                    <a> Add to Cart &nbsp; &nbsp; &nbsp; <img src="./Images/Vector (2).png"></a>
+                 </button>
+               </div>
+         </div>
+    </div>
+    <div class="menu" data-page="5">
+        <h1>Pasta Menu</h1>
+        <div id="flexbox">
+            <div class=mini_menu>
+                <img class="food_c" src="./Images/Rectangle 24 (3).png">
+                <div class="price_tag">
+                    <p class="food_name"> Nacho Cheese Fries</p><p class="food_price">$40.00</p>
+                </div>
+                <button class="cart_btn">
+                    <a> Add to Cart &nbsp; &nbsp; &nbsp; <img src="./Images/Vector (2).png"></a>
+                </div>
+               </button>
+            <div class="mini_menu">
+                <img class="food_c" src="./Images/Rectangle 24 (4).png">
+                <div class="price_tag">
+                    <p class="food_name">Hotdogs</p><p class="food_price">$50.00</p>
+                </div>
+                <button class="cart_btn">
+                    <a> Add to Cart &nbsp; &nbsp; &nbsp;<img src="./Images/Vector (2).png"></a>
+                </button>
+               </div>
+            <div class="mini_menu">
+                <img class="food_c" src="./Images/Rectangle 24 (5).png">
+                <div class="price_tag">
+                    <p class="food_name"> Burgers,Fries and Nuggets</p><p class="food_price">$15.00</p>
+                 </div>
+                 <button class="cart_btn">
+                    <a> Add to Cart &nbsp; &nbsp; &nbsp; <img src="./Images/Vector (2).png"></a>
+                 </button>
+               </div>
+         </div>
+    </div>
+    <div class="menu" data-page="6">
+        <h1>African Menu</h1>
+        <div id="flexbox">
+            <div class="mini_menu">
+                <img class="food_c" src="./Images/Rectangle 24 (3).png">
+                <div class="price_tag">
+                    <p class="food_name"> Nacho Cheese Fries</p><p class="food_price">$40.00</p>
+                </div>
+                <button class="cart_btn">
+                    <a> Add to Cart &nbsp; &nbsp; &nbsp; <img src="./Images/Vector (2).png"></a>
+                </button>
+               </div>
+            <div class="mini_menu">
+                <img class="food_c" src="./Images/Rectangle 24 (4).png">
+                <div class="price_tag">
+                    <p class="food_name">Hotdogs</p><p class="food_price">$50.00</p>
+                </div>
+                <button class="cart_btn">
+                    <a> Add to Cart &nbsp; &nbsp; &nbsp;<img src="./Images/Vector (2).png"></a>
+                </button>
+               </div>
+            <div class="mini_menu">
+                <img class="food_c" src="./Images/Rectangle 24 (5).png">
+                <div class="price_tag">
+                    <p class="food_name"> Burgers,Fries and Nuggets</p><p class="food_price">$15.00</p>
+                 </div>
+                 <button class="cart_btn">
+                    <a> Add to Cart &nbsp; &nbsp; &nbsp; <img src="./Images/Vector (2).png"></a>
+                 </button>
+               </div>
+         </div>
+    </div>
+    <div class="menu" data-page="7">
+        <h1>Salad Menu</h1>
+        <div id="flexbox">
+            <div class="mini_menu">
+                <img class="food_c" src="./Images/Rectangle 24 (3).png">
+                <div class="price_tag">
+                    <p class="food_name"> Nacho Cheese Fries</p><p class="food_price">$40.00</p>
+                </div>
+                <button class="cart_btn">
+                    <a> Add to Cart &nbsp; &nbsp; &nbsp; <img src="./Images/Vector (2).png"></a>
+                </button>
+               </div>
+            <div class="mini_menu">
+                <img class="food_c" src="./Images/Rectangle 24 (4).png">
+                <div class="price_tag">
+                    <p class="food_name">Hotdogs</p><p class="food_price">$50.00</p>
+                </div>
+                <button class="cart_btn">
+                    <a> Add to Cart &nbsp; &nbsp; &nbsp;<img src="./Images/Vector (2).png"></a>
+                </button>
+               </div>
+            <div class="mini_menu">
+                <img class="food_c" src="./Images/Rectangle 24 (5).png">
+                <div class="price_tag">
+                    <p class="food_name"> Burgers,Fries and Nuggets</p><p class="food_price">$15.00</p>
+                 </div>
+                 <button class="cart_btn">
+                    <a> Add to Cart &nbsp; &nbsp; &nbsp; <img src="./Images/Vector (2).png"></a>
+                 </button>
+               </div>
+         </div>
+    </div>
+    <div class="menu" data-page="8">
+        <h1>Soup Menu</h1>
+        <div id="flexbox">
+            <div class="mini_menu">
+                <img class="food_c" src="./Images/Rectangle 24 (3).png">
+                <div class="price_tag">
+                    <p class="food_name"> Nacho Cheese Fries</p><p class="food_price">$40.00</p>
+                </div>
+                <button class="cart_btn">
+                    <a> Add to Cart &nbsp; &nbsp; &nbsp; <img src="./Images/Vector (2).png"></a>
+                </button>
+               </div>
+            <div class="mini_menu">
+                <img class="food_c" src="./Images/Rectangle 24 (4).png">
+                <div class="price_tag">
+                    <p class="food_name">Hotdogs</p><p class="food_price">$50.00</p>
+                </div>
+                <button class="cart_btn">
+                    <a> Add to Cart &nbsp; &nbsp; &nbsp;<img src="./Images/Vector (2).png"></a>
+                </button>
+               </div>
+            <div class="mini_menu">
+                <img class="food_c" src="./Images/Rectangle 24 (5).png">
+                <div class="price_tag">
+                    <p class="food_name"> Burgers,Fries and Nuggets</p><p class="food_price">$15.00</p>
+                 </div>
+                 <button class="cart_btn">
+                    <a> Add to Cart &nbsp; &nbsp; &nbsp; <img src="./Images/Vector (2).png"></a>
+                 </button>
+               </div>
+         </div>
+    </div>
+    <div class="menu" data-page="9">
+        <h1>Special Combos Menu</h1>
+        <div id="flexbox">
+            <div class="mini_menu">
+                <img class="food_c" src="./Images/Rectangle 24 (3).png">
+                <div class="price_tag">
+                    <p class="food_name"> Nacho Cheese Fries</p><p class="food_price">$40.00</p>
+                </div>
+                <button class="cart_btn">
+                    <a> Add to Cart &nbsp; &nbsp; &nbsp; <img src="./Images/Vector (2).png"></a>
+                </button>
+               </div>
+            <div class="mini_menu">
+                <img class="food_c" src="./Images/Rectangle 24 (4).png">
+                <div class="price_tag">
+                    <p class="food_name">Hotdogs</p><p class="food_price">$50.00</p>
+                </div>
+                <button class="cart_btn">
+                    <a> Add to Cart &nbsp; &nbsp; &nbsp;<img src="./Images/Vector (2).png"></a>
+                </button>
+               </div>
+            <div class="mini_menu">
+                <img class="food_c" src="./Images/Rectangle 24 (5).png">
+                <div class="price_tag">
+                    <p class="food_name"> Burgers,Fries and Nuggets</p><p class="food_price">$15.00</p>
+                 </div>
+                 <button class="cart_btn">
+                    <a> Add to Cart &nbsp; &nbsp; &nbsp; <img src="./Images/Vector (2).png"></a>
+                 </button>
+               </div>
+         </div>
+    </div>
+    <div class="menu" data-page="10">
+        <h1>Dessert Menu</h1>
+        <div id="flexbox">
+            <div class="mini_menu">
+                <img class="food_c" src="./Images/Rectangle 24 (3).png">
+                <div class="price_tag">
+                    <p class="food_name"> Nacho Cheese Fries</p><p class="food_price">$40.00</p>
+                </div>
+                <button class="cart_btn">
+                    <a> Add to Cart &nbsp; &nbsp; &nbsp; <img src="./Images/Vector (2).png"></a>
+                </button>
+               </div>
+            <div class="mini_menu">
+                <img class="food_c" src="./Images/Rectangle 24 (4).png">
+                <div class="price_tag">
+                    <p class="food_name">Hotdogs</p><p class="food_price">$50.00</p>
+                </div>
+                <button class="cart_btn">
+                    <a> Add to Cart &nbsp; &nbsp; &nbsp;<img src="./Images/Vector (2).png"></a>
+                </button>
+               </div>
+            <div class="mini_menu">
+                <img class="food_c" src="./Images/Rectangle 24 (5).png">
+                <div class="price_tag">
+                    <p class="food_name"> Burgers,Fries and Nuggets</p><p class="food_price">$15.00</p>
+                 </div>
+                 <button class="cart_btn">
+                    <a> Add to Cart &nbsp; &nbsp; &nbsp; <img src="./Images/Vector (2).png"></a>
+                 </button>
+               </div>
+         </div>
+    </div>  
      </div>
      <div id="section_c">
          <div id="left_c">
