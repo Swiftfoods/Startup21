@@ -45,6 +45,7 @@ body{
     margin: 0;
     padding: 0;
     width: 65%;
+    display: block;
 }
 
 #header ul {
@@ -54,6 +55,8 @@ margin-left: 20%;
 margin-top: 33px;
 margin-bottom: 32px;
 margin-right: 0;
+width: 100%;
+display: block;
 }
 
 #header li{

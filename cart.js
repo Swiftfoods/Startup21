@@ -5,6 +5,9 @@ if (document.readyState == 'loading'){
 }
 
 function ready(){
+    
+   newCartItem()
+    updateCartTotal()
     var removeCartItemButtons = document.getElementsByClassName('delete')
     for(var i = 0; i < removeCartItemButtons.length; i++){
         var button = removeCartItemButtons[i]
@@ -28,11 +31,36 @@ function ready(){
         }
         updateCartTotal()
     }
-localStorage.getItem('newOrder')
+    function newCartItem(){
+        var cartItemContainer = document.getElementsByClassName('order_box')[0]
+        const foodName = localStorage.getItem('orderName')
+        const foodPrice = localStorage.getItem('orderItem')
+        const imgSrc = localStorage.getItem('imageSrc')
+        var newItem = document.createElement('div')
+        newItem.classList.add('orders')
+        var newItemContent = `
 
+        <div  class="photo_box">
+            <span  class="food_photo"><img src="${imgSrc}" ></span>
+        </div> 
+        <div class="info_box">
+            <h1> <span class="food_name">${foodName}</span> <span class="food_price">${foodPrice}</span></h1>
+            <h2 class="food_info">The in-house meal by Chef Moose</h2>
+    </div>
+        <div class="unit_control">
+            <input type="number" min="1" max="100" step="1" value="1" class="unit">
+        </div>
+        <button class="delete"><img src="./Images/DELETE.png"> Delete</button>`
+        
+        newItem.innerHTML= newItemContent
+        cartItemContainer.append(newItem)
+     
+    }
 
-  localStorage.setItem('orderBox', document.getElementsByClassName('order_box')[0])
-    function updateCartTotal(){
+    
+   
+  
+  function updateCartTotal(){
         var cartItemContainer = document.getElementsByClassName('order_box')[0]
         var cartRows = cartItemContainer.getElementsByClassName('orders')
         var total = 0
@@ -64,7 +92,8 @@ localStorage.getItem('newOrder')
       document.getElementsByClassName('unit').innerHTML = value;
      
      }
-    
+
+     
 }
 
 

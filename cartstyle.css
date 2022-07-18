@@ -1,13 +1,13 @@
 body{
     margin: 0;
-    width: 1440px;
+    width: 100%;
     font-family: 'Montserrat', sans-serif;
 }
 
 #navbar {
     position: fixed;
     display: block;
-    width: 1440px;
+    width: 100%;
     height: 87px;
     background-color: white;
     font-family: 'Montserrat', sans-serif;
@@ -32,8 +32,9 @@ body{
 
 #header {
     float: left;
-    margin: 0;
+    margin-left: 10%;
     padding: 0;
+    width: 60%;
 }
 
 #header ul {
@@ -100,6 +101,7 @@ margin-right: 0;
     padding-top: 100px;
     display:block;
     background-color:#F4F4F8;
+    width: 100%;
 }
 #head{
     margin-left: 20px;
@@ -122,8 +124,10 @@ background-color: white;
 }
 
 .order_box{
-    margin-right: 124px;
-    width: 740px;
+    margin-left: 2%;
+    width: 850px;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 .orders{
@@ -131,7 +135,7 @@ background-color: white;
     margin-bottom: 15px;
     border: 2px solid #F4F4F8;
     background-color: white;
-    width: 690px;
+    width: 750px;
     height: 176px;
 }
 .orders h1{
@@ -153,13 +157,20 @@ background-color: white;
     font-size: 18px;
     font-weight: 500;
     margin-right: 50px;
+    width: 270px;
+    display: inline-block;
+}
+
+.food_photo img{
+    width: 176px;
+    height: 176px;
 }
 .unit_control{
     border: 1px solid #F4F4F8;   
     width: 80px;
     height: 30px;
     margin-top: 67px;
-    margin-left: 84px;
+    margin-left: 94px;
     padding-top: 8px;
     padding-left: 20px;
     background-color: white;
@@ -170,12 +181,7 @@ background-color: white;
      height: 20px;
      margin-bottom: 8px;
 }
-.unit-button.quantity-up{
-    float: right;
-}
-.unit-button.quantity-down{
-    float: left;
-}
+
 
 .delete{
     width: 94px;
@@ -186,8 +192,18 @@ background-color: white;
     background-color: white;
     border: 1px solid rgb(238, 232, 232);
 }
+.delete:hover{
+    cursor: pointer;
+}
+#continue{
+    margin-top: -20px;
+}
 .delete img{
 margin-right: 6px;
+}
+
+#transaction_section{
+    margin-left: 15%;
 }
 
 #transaction_report{
@@ -198,6 +214,7 @@ margin-right: 6px;
     margin-bottom: 50px;
     padding-left: 5px;
     padding-bottom: 3px;
+    float: right;
 }
 
 #transaction_report h2 {
