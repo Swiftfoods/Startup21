@@ -4,6 +4,10 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+#logo{
+    margin: 0;
+}
+
 #navbar {
     position: fixed;
     display: block;
@@ -12,6 +16,15 @@ body{
     background-color: white;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
+    box-shadow:  10px 5px 15px gray;
+}
+
+#cart_item_count{
+    color:#FF724C;
+    font-size: 16px;
+    margin-left: 2px;
+    margin-bottom:-6px;
+    font-weight: 400;
 }
 
 #navbar::after{
@@ -32,22 +45,26 @@ body{
 
 #header {
     float: left;
-    margin-left: 10%;
+    margin: 0;
     padding: 0;
-    width: 60%;
+    width: 65%;
+    display: block;
 }
 
 #header ul {
 list-style: none;
 font-size: large;
+margin-left: 20%;
 margin-top: 33px;
 margin-bottom: 32px;
 margin-right: 0;
+width: 100%;
+display: block;
 }
 
 #header li{
     display: inline-block;
-    margin-left: 100px;
+    margin-left: 150px;
     padding: 0;
     margin-right: 0;
 }
@@ -80,19 +97,11 @@ margin-right: 0;
   }
 
 
-#login {
-    position: absolute;
-    float: left;
-    margin-right: 53px;
-    margin-top: 25px;
-    margin-bottom: 18px;
-    margin-left: 283.98px;
-    height: 44px;
-    width: 154px;
-    border: 2px solid #4BA90A;
-    border-radius: 5px;
-    font-size: large;
-    font-family: 'Montserrat', sans-serif;
+
+#Navbar{
+    position: fixed;
+    margin-top: 0;
+    
 }
 
 

@@ -24,6 +24,7 @@ function ready(){
         buttonClicked.parentElement.remove()
         updateCartTotal()
     }
+    
     function quantityChange(event){
         var input= event.target
         if(isNaN(input.value)|| input.value<= 0){
@@ -32,31 +33,37 @@ function ready(){
         updateCartTotal()
     }
     function newCartItem(){
-        var cartItemContainer = document.getElementsByClassName('order_box')[0]
-        const foodName = localStorage.getItem('orderName')
-        const foodPrice = localStorage.getItem('orderItem')
-        const imgSrc = localStorage.getItem('imageSrc')
-        var newItem = document.createElement('div')
-        newItem.classList.add('orders')
-        var newItemContent = `
-
-        <div  class="photo_box">
-            <span  class="food_photo"><img src="${imgSrc}" ></span>
-        </div> 
-        <div class="info_box">
-            <h1> <span class="food_name">${foodName}</span> <span class="food_price">${foodPrice}</span></h1>
-            <h2 class="food_info">The in-house meal by Chef Moose</h2>
-    </div>
-        <div class="unit_control">
-            <input type="number" min="1" max="100" step="1" value="1" class="unit">
-        </div>
-        <button class="delete"><img src="./Images/DELETE.png"> Delete</button>`
-        
-        newItem.innerHTML= newItemContent
-        cartItemContainer.append(newItem)
-     
-    }
-
+        let cartItemContainer = document.getElementsByClassName('order_box')[0]
+        let cart = JSON.parse(localStorage.getItem('cart'))
+        if(cart && cartItemContainer){
+            cartItemContainer.innerHTML=''
+            Object.values(cart).map(item => {
+                cartItemContainer.innerHTML +=     `
+            <div class = orders> 
+                <div  class="photo_box">
+                    <span  class="food_photo"><img src="./Images/${item.image}" ></span>
+                </div> 
+                <div class="info_box">
+                    <h1> <span class="food_name">${item.food}</span> <span class="food_price">${item.price}</span></h1>
+                    <h2 class="food_info">The in-house meal by Chef Moose</h2>
+            </div>
+                <div class="unit_control">
+                    <input type="number" min="1" max="100" step="1" value="1" class="unit">
+                </div>
+                <button class="delete"><img src="./Images/DELETE.png"> Delete</button>
+        </div>`
+             })
+         }
+     }
+     setCartItemCounter()
+     // Set item counter
+   function setCartItemCounter(){
+     let cart = JSON.parse(localStorage.getItem('cart'))
+     let counter = parseInt(Object.keys(cart).length)
+     console.log(counter)
+     let cartCount = document.getElementById('cart_item_count')
+     cartCount.innerHTML = counter
+   }
     
    
   

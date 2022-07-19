@@ -24,6 +24,14 @@ body{
     box-shadow:  10px 5px 15px gray;
 }
 
+#cart_item_count{
+    color:#FF724C;
+    font-size: 16px;
+    margin-left: 4px;
+    
+    font-weight: 400;
+}
+
 #navbar::after{
     display: table;
     content: '';
@@ -294,6 +302,11 @@ margin-bottom: 50px;
 }
 .cart_btn:hover{
     cursor: pointer;
+    background-color: #4BA90A;
+    
+}
+.cart_btn:focus{
+    background-color: #4BA90A;
 }
 #section_c{
     margin-top: 250px;

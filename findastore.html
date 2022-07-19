@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <script src="script.js"></script>
+    <script src="script.js" async></script>
     <link rel="stylesheet" href="findastorestyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,11 +15,11 @@
 </head>
 <body>
     <div id="navbar">
-        <img src="./Images/Logo.png">
+        <img id="logo" src="./Images/Logo.png">
         <nav id="header"> 
             <ul>
                 <li><a href="homepage.html">Home</a></li>
-                <li><a href="cart.html">Cart</a></li>
+                <li><a href="cart.html">Cart<sup><span id="cart_item_count" ></span></sup></a></li>
                 <li><a href="contactus.html">Contact Us</a></li>
                 <li><a href="mamaputin.html">Menu</a></li>
           </ul>
