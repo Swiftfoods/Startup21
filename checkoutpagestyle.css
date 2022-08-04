@@ -10,6 +10,7 @@ body{
 #mother_container label{
     font-weight: 500;
     width: 100%;
+    font-size: 22px;
 }
 #checkout_section{
     display: flex;
@@ -62,7 +63,7 @@ body{
     text-decoration: none;
     text-align: center;
     color: whitesmoke;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 500;
 }
 #transaction_report{
@@ -73,12 +74,18 @@ body{
 }
 #transaction_report #subtotal{
     float: right;
+    padding-right: 40px;
+
 }
 #transaction_report #delivery_price{
     float: right;
+    padding-right: 40px;
+
 }
 #transaction_report #total_price{
     float: right;
+    padding-right: 40px;
+
 }
 #transaction_report #mini_text{
     text-align: right;
@@ -87,6 +94,7 @@ body{
 
 #payment h3{
     padding-left: 10px;
+
 }
 
 #payment_option{
@@ -107,6 +115,8 @@ body{
     display: flex;
     background-color: #d4d4d439;
     width: 100%;
+    border: 2px solid #D4D4D4;
+
 }      
 #form-box{
     width: 50%;
@@ -139,6 +149,7 @@ body{
     width: 20%;
     margin-left: 25%;
     border-radius: 5px;
+    font-size: 24px;
 } 
 
 #image-box{
